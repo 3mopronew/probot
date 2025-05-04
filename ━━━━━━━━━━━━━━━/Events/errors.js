@@ -9,31 +9,7 @@ process.on("uncaughtException", () => { })
 process.on("unhandledRejection", () => { })
 
 process.on("uncaughtExceptionMonitor", () => { })
-/*
-process.on("multipleResolves", (type, promise, reason) => {
-console.error(`Multiple Resolves Error :`)
-console.error(`Type : ${type}`)
-console.error(`Promise : ${promise}`)
-console.error(`Reason : ${reason}`)})
 
-process.on("rejectionHandled", (error) => {
-console.warn(`Rejection Handled :`)
-console.warn(`Reason : ${error}`)})
-
-process.on("uncaughtException", (err, origin) => {
-console.error(`Caught Uncaught Exception :`)
-console.error(`Error : ${err.message}`)
-console.error(`Origin : ${origin}`)})
-
-process.on("unhandledRejection", (reason, promise) => {
-console.error(`Unhandled Rejection At : ${promise}`)
-console.error(`Reason : ${reason}`)})
-
-process.on("uncaughtExceptionMonitor", (err, origin) => {
-console.error(`Uncaught Exception Monitor :`)
-console.error(`Error : ${err.message}`)
-console.error(`Origin : ${origin}`)})
-*/
 //══════[ Errors Log ]══════
 
 const axios = require("axios")

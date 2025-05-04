@@ -52,20 +52,6 @@ client.once(event.name, (...args) => event.execute(client, ...args))
 client.on(event.name, (...args) => event.execute(client, ...args))}}})
 
 //══════════════════════════════════════════════════
-/*
-fs.readdirSync("./ㆍ━━━━━━━━━━ㆍ").forEach((folder) => {
-
-const commandFiles = fs.readdirSync(`./ㆍ━━━━━━━━━━ㆍ/${folder}`).filter(file => file.endsWith(".js"))
-
-for (const file of commandFiles) {
-
-const command = require(`./ㆍ━━━━━━━━━━ㆍ/${folder}/${file}`)
-
-if (command.name) {
-
-client.slashCommands.set(command.name, command)}}})
-*/
-//══════════════════════════════════════════════════
 
 const excludedFolders = ["5ㆍالسوق"]
 

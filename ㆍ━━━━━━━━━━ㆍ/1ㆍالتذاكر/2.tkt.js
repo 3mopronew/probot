@@ -102,8 +102,7 @@ let ticketData = []
 try {
 const ticketDataString = fs.readFileSync("./━━━━━━━━━━━━━━━/Database/TKT2.json", "utf-8")
 ticketData = JSON.parse(ticketDataString)
-} catch (error) {
-console.error("Error Reading Ticket Data :", error)}
+} catch (error) { return; }
 
 const newTicket = {
 userId: interaction.user.id,

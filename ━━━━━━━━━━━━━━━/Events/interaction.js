@@ -16,6 +16,4 @@ try {
 
 await command.execute(client, interaction)
 
-} catch (error) {
-
-console.error(error)}}}
+} catch (error) { return; }}}
