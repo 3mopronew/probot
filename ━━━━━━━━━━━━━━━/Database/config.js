@@ -188,30 +188,40 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 5263158`)],
 ephemeral: true })}
 
 // الشارات
 
-if (interaction.customId === "price_50k") {
+if (interaction.customId === "price_100k") {
 interaction.reply({
 content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
-.setDescription(`C ${module.exports.bank} 52632`)],
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
+.setDescription(`C ${module.exports.bank} 105264`)],
 ephemeral: true })}
 
-if (interaction.customId === "price_1.2m") {
+if (interaction.customId === "price_1.6m") {
 interaction.reply({
 content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
-.setDescription(`C ${module.exports.bank} 1263158`)],
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
+.setDescription(`C ${module.exports.bank} 1684211`)],
+ephemeral: true })}
+
+if (interaction.customId === "price_2m") {
+interaction.reply({
+content: module.exports.join_to_trans,
+embeds: [
+new MessageEmbed()
+.setColor(module.exports.color)
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
+.setDescription(`C ${module.exports.bank} 2105264`)],
 ephemeral: true })}
 
 if (interaction.customId === "price_1.4m") {
@@ -220,18 +230,8 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 1473685`)],
-ephemeral: true })}
-
-if (interaction.customId === "price_600k") {
-interaction.reply({
-content: module.exports.join_to_trans,
-embeds: [
-new MessageEmbed()
-.setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
-.setDescription(`C ${module.exports.bank} 631579`)],
 ephemeral: true })}
 
 if (interaction.customId === "price_2.6m") {
@@ -240,7 +240,7 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 2736843`)],
 ephemeral: true })}
 
@@ -252,7 +252,7 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 526316`)],
 ephemeral: true })}
 
@@ -262,7 +262,7 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 842106`)],
 ephemeral: true })}
 
@@ -272,7 +272,7 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 1263158`)],
 ephemeral: true })}
 
@@ -282,7 +282,7 @@ content: module.exports.join_to_trans,
 embeds: [
 new MessageEmbed()
 .setColor(module.exports.color)
-.setTitle("<:i:1253085658486931476> ㆍ التحويل عن طريق عملة البروبوت")
+.setTitle("<:i:1368985400311287888> ㆍ التحويل عن طريق عملة البروبوت")
 .setDescription(`C ${module.exports.bank} 1368422`)],
 ephemeral: true })}
 
