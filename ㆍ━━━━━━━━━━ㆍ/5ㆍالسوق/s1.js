@@ -28,10 +28,18 @@ new MessageButton()
 .setLabel("مِثَالٌ لِلْمَوْقِعِ")
 .setStyle("LINK")
 .setURL("https://onlyahmd.glitch.me")
-.setEmoji("1333197746349281330"),
-i.ticket,
-i.price_5m)]}
+.setEmoji(i.emoji.web),
+new MessageButton()
+.setCustomId("support_create")
+.setLabel("فَتْحُ تَذْكِرَةٍ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.ticket),
+new MessageButton()
+.setCustomId("price_5m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))]}
 
-interaction.reply(msg)
+if (interaction.guild) { interaction.channel.send(msg)} else { interaction.reply(msg)}
 
 }}

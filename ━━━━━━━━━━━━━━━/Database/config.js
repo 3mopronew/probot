@@ -33,6 +33,11 @@ review: "1326619135802609724",
 true: "1326618220362469539",
 false: "1326618090850619434",
 ticket: "1326604836552314971",
+payment: "1327703573525561455",
+download: "1327668756150882386",
+web: "1333197746349281330",
+toxic: "1333208486301138944",
+other: "1333208431154430012",
 add: "1333942346701869096",
 remove: "1333942368130564178",
 positive: "1326635409559785573",
@@ -42,7 +47,17 @@ punishment: "1333942425634345000",
 close: "1333128012073275422",
 open: "1333128045531365406",
 hide: "1333132689083207694",
-show: "1333132714651680856"
+show: "1333132714651680856",
+bravery: "1332346706431316039",
+brilliance: "1332346710067904593",
+balance: "1332346724450304021",
+completedaquest: "1332346726417301596",
+activedeveloper: "1332346728799539240",
+EMPTY1: "1332351487883612253",
+EMPTY2: "1332351622621433937",
+supportscommands: "1332346989009965139",
+usesautomod: "1332346991124156489",
+EMPTY3: "1332347493307908187"
 },
 
 //════════════════════
@@ -94,83 +109,7 @@ join_to_trans: `**- يُرْجَى ٱلِٱنْضِمَامُ لِلْخَادِ
 
 order_done_response: `**
 <:i:1367974486565060759> ㆍ جَارٍ ٱلْمُوَافَقَةُ عَلَى ٱلطَّلَبِ مِنْ قِبَلِ ٱلْمُطَوِّرِ، يُسْتَحْسَنُ فَتْحُ تَذْكِرَةٍ**
-** **`,
-
-//════════════════════
-
-ticket: new MessageButton()
-.setCustomId("support_create")
-.setLabel("فَتْحُ تَذْكِرَةٍ")
-.setStyle("SECONDARY")
-.setEmoji("1326604836552314971"),
-
-//════════════════════
-
-// الموقع
-
-price_5m: new MessageButton()
-.setCustomId("price_5m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-// الشارات
-
-price_50k: new MessageButton()
-.setCustomId("price_50k")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_1_2m: new MessageButton()
-.setCustomId("price_1.2m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_1_4m: new MessageButton()
-.setCustomId("price_1.4m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_600k: new MessageButton()
-.setCustomId("price_600k")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_2_6m: new MessageButton()
-.setCustomId("price_2.6m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-// السيلف
-
-price_500k: new MessageButton()
-.setCustomId("price_500k")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_800k: new MessageButton()
-.setCustomId("price_800k")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_1_2m: new MessageButton()
-.setCustomId("price_1.2m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
-
-price_1_3m: new MessageButton()
-.setCustomId("price_1.3m")
-.setLabel("طُرُقُ ٱلدَّفْعِ")
-.setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
+** **`
 
 }
 

@@ -14,173 +14,13 @@ const { DiscordModal, ModalBuilder, ModalField } = require("discord-modal")
 
 DiscordModal(client)
 
-//══════[ Command ]══════
-
-module.exports = {
-name: "market",
-description: "ㆍ",
-integration_types: [0, 1],
-contexts: [0, 1, 2],
-async execute(client, interaction) {
-
-const msg = {
-components: [
-new MessageActionRow()
-.addComponents(
-new MessageButton()
-.setCustomId("market_3")
-.setLabel("إِنْشَاءُ مَوْقِعٍ تَعْرِيفِيٍّ")
-.setStyle("SECONDARY")
-.setEmoji("1333197746349281330"),
-new MessageButton()
-.setCustomId("market_1")
-.setLabel("خَدْمَاتُ ٱلشَّارَاتِ")
-.setStyle("SECONDARY")
-.setEmoji("1333209081220960346"),
-new MessageButton()
-.setCustomId("market_2")
-.setLabel("خَدْمَاتُ ٱلسِّيلْف")
-.setStyle("SECONDARY")
-.setEmoji("1333208486301138944"))]}
-
-if (interaction.guild) { interaction.reply({ ...msg, ephemeral: true })} else { interaction.reply(msg)}
-
-}}
-
-//══════[ Action 1 ]══════
+//══════[ Action ]══════
 
 client.on("interactionCreate", async interaction => {
 
 if (interaction.isButton()) {
 
 //════════════════════
-
-if (interaction.customId === "market_1") {
-
-const msg = {
-components: [
-new MessageActionRow()
-.addComponents(
-// House of Bravery
-new MessageButton()
-.setCustomId("bravery")
-.setStyle("SECONDARY")
-.setEmoji("1332346706431316039"),
-// House of Brilliance
-new MessageButton()
-.setCustomId("brilliance")
-.setStyle("SECONDARY")
-.setEmoji("1332346710067904593"),
-// House of Balance
-new MessageButton()
-.setCustomId("balance")
-.setStyle("SECONDARY")
-.setEmoji("1332346724450304021"),
-// Completed a Quest
-new MessageButton()
-.setCustomId("completedaquest")
-.setStyle("SECONDARY")
-.setEmoji("1332346726417301596"),
-// Active Developer
-new MessageButton()
-.setCustomId("activedeveloper")
-.setStyle("SECONDARY")
-.setEmoji("1332346728799539240")),
-new MessageActionRow()
-.addComponents(
-// Discord Bug Hunter (1)
-new MessageButton()
-.setCustomId("EMPTY1")
-.setStyle("SECONDARY")
-.setEmoji("1332351487883612253")
-.setDisabled(true),
-// Discord Bug Hunter (2)
-new MessageButton()
-.setCustomId("EMPTY2")
-.setStyle("SECONDARY")
-.setEmoji("1332351622621433937")
-.setDisabled(true),
-// Supports Commands
-new MessageButton()
-.setCustomId("supportscommands")
-.setStyle("SECONDARY")
-.setEmoji("1332346989009965139"),
-// Uses Automod
-new MessageButton()
-.setCustomId("usesautomod")
-.setStyle("SECONDARY")
-.setEmoji("1332346991124156489"),
-// This server has App Name premium
-new MessageButton()
-.setCustomId("EMPTY3")
-.setStyle("SECONDARY")
-.setEmoji("1332347493307908187")
-.setDisabled(true))]}
-
-interaction.reply({ ...msg, ephemeral: true })}
-
-//════════════════════
-
-if (interaction.customId === "market_2") {
-
-const msg = {
-components: [
-new MessageActionRow()
-.addComponents(
-new MessageSelectMenu()
-.setCustomId("select")
-.setPlaceholder("مَجْمُوعَةُ خَدَمَاتِ ٱلسِّيلْف بُوت")
-.addOptions([
-{
-label: "ٱلتَّلْڤِيل",
-description: "تَرْقِيَةُ الحِسَابِ إِلَى مُسْتَوًى ١٠٠ فِي ٱلْبْرُوبُوت",
-value: "spam",
-emoji: "1333208486301138944"
-},
-{
-label: "ٱلتَّأْفِيك",
-description: "تَثْبِيتُ الحِسَابِ فِي القَنَاةِ الصَّوْتِيَّةِ عَلَى مَدَارِ ٢٤ سَاعَةٍ",
-value: "afk",
-emoji: "1333208486301138944"
-},
-{
-label: "الأُونْلَاين",
-description: "إِبْقَاءُ الحِسَابِ فِي وَضْعِ الأُونْلَايْن عَلَى مَدَارِ ٢٤ سَاعَةٍ",
-value: "status",
-emoji: "1333208486301138944"
-},
-{
-label: "حَالَةُ لَعِبٍ",
-description: "إِنْشَاءُ حَالَةٍ مُخَصَّصَةٍ — PLAYING, LISTENING, WATCHING",
-value: "rpc",
-emoji: "1333208486301138944"
-}
-]))]}
-
-interaction.reply({ ...msg, ephemeral: true })}
-
-//════════════════════
-
-if (interaction.customId === "market_3") {
-
-const msg = {
-content: `**
-<:i:${i.emoji.info}> ㆍ [إِنْشَاءُ صَفْحَةٍ تَعْرِيفِيَّةٍ تَضُمُّ مَعْلُومَاتِكَ وَحِسَابَاتِكَ](https://cdn.discordapp.com/attachments/1251203377761615912/1332103222386753697/image.png) **
-** **`,
-components: [
-new MessageActionRow()
-.addComponents(
-new MessageButton()
-.setLabel("مِثَالٌ لِلْمَوْقِعِ")
-.setStyle("LINK")
-.setURL("https://onlyahmd.glitch.me")
-.setEmoji("1333197746349281330"),
-i.ticket,
-i.price_5m)]}
-
-interaction.reply({ ...msg, ephemeral: true })}
-
-//══════[ Action 2 ]══════
 
 // HypeSquad Bravery
 
@@ -194,7 +34,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_50k)],
+new MessageButton()
+.setCustomId("price_100k")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -211,7 +55,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_50k)],
+new MessageButton()
+.setCustomId("price_100k")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -228,7 +76,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_50k)],
+new MessageButton()
+.setCustomId("price_100k")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -245,7 +97,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_1_2m)],
+new MessageButton()
+.setCustomId("price_1.6m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -272,8 +128,16 @@ content: `**
 components: [
 new MessageActionRow()
 .addComponents(
-i.ticket,
-i.price_1_4m)],
+new MessageButton()
+.setCustomId("support_create")
+.setLabel("فَتْحُ تَذْكِرَةٍ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.ticket),
+new MessageButton()
+.setCustomId("price_2m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -290,7 +154,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_600k)],
+new MessageButton()
+.setCustomId("price_1.4m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -307,7 +175,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_2_6m)],
+new MessageButton()
+.setCustomId("price_2.6m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 }})
@@ -339,7 +211,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_1_3m)],
+new MessageButton()
+.setCustomId("price_1.3m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -363,7 +239,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_800k)],
+new MessageButton()
+.setCustomId("price_800k")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -387,7 +267,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_500k)],
+new MessageButton()
+.setCustomId("price_500k")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 //════════════════════
@@ -411,7 +295,11 @@ new MessageButton()
 .setLabel("بَدْءُ ٱلطَّلَبِ")
 .setStyle("SECONDARY")
 .setEmoji(i.emoji.ticket),
-i.price_1_2m)],
+new MessageButton()
+.setCustomId("price_1.2m")
+.setLabel("طُرُقُ ٱلدَّفْعِ")
+.setStyle("SECONDARY")
+.setEmoji(i.emoji.payment))],
 ephemeral: true })}
 
 }})

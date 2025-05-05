@@ -139,12 +139,12 @@ new MessageButton()
 .setLabel("صُورَةُ ٱلْحِسَابِ")
 .setStyle("LINK")
 .setURL(q1)
-.setEmoji("1327668756150882386"),
+.setEmoji(i.emoji.download),
 new MessageButton()
 .setLabel("خَلْفِيَّةُ ٱلْحِسَابِ")
 .setStyle("LINK")
 .setURL(q2)
-.setEmoji("1327668756150882386"))]})}
+.setEmoji(i.emoji.download))]})}
 
 //════════════════════
 

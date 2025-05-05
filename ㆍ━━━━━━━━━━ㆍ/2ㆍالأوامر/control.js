@@ -98,12 +98,12 @@ new MessageButton()
 .setCustomId("premium")
 .setLabel("الأَوَامِرُ الْمُمَيَّزَةُ")
 .setStyle("SECONDARY")
-.setEmoji("1327703573525561455"),
+.setEmoji(i.emoji.payment),
 new MessageButton()
 .setCustomId("developer")
 .setLabel("개발자")
 .setStyle("SECONDARY")
-.setEmoji("1333208431154430012"))],
+.setEmoji(i.emoji.other))],
 
 ephemeral: true })
 

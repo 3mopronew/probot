@@ -29,28 +29,28 @@ new MessageSelectMenu()
 label: "ٱلتَّلْڤِيل",
 description: "تَرْقِيَةُ الحِسَابِ إِلَى مُسْتَوًى ١٠٠ فِي ٱلْبْرُوبُوت",
 value: "spam",
-emoji: "1333208486301138944"
+emoji: i.emoji.toxic
 },
 {
 label: "ٱلتَّأْفِيك",
 description: "تَثْبِيتُ الحِسَابِ فِي القَنَاةِ الصَّوْتِيَّةِ عَلَى مَدَارِ ٢٤ سَاعَةٍ",
 value: "afk",
-emoji: "1333208486301138944"
+emoji: i.emoji.toxic
 },
 {
 label: "الأُونْلَاين",
 description: "إِبْقَاءُ الحِسَابِ فِي وَضْعِ الأُونْلَايْن عَلَى مَدَارِ ٢٤ سَاعَةٍ",
 value: "status",
-emoji: "1333208486301138944"
+emoji: i.emoji.toxic
 },
 {
 label: "حَالَةُ لَعِبٍ",
 description: "إِنْشَاءُ حَالَةٍ مُخَصَّصَةٍ — PLAYING, LISTENING, WATCHING",
 value: "rpc",
-emoji: "1333208486301138944"
+emoji: i.emoji.toxic
 }
 ]))]}
 
-interaction.reply(msg)
+if (interaction.guild) { interaction.channel.send(msg)} else { interaction.reply(msg)}
 
 }}
